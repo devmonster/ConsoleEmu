@@ -4,6 +4,9 @@ Emulates a PowerShell console window with scripted text input and output.
 
 Configure a scenario in the `scenario.json` file.
 
+Scenarios are executed in order. The user must press keys on the keyboard to simulate typing the commands. The specific key pressed is not important, as each keypress outputs a character indicated in the Scenario Input property. An Enter/Return keypress is required at the end of each line.
+
+
 ## Sample Full Configuration
 
 ```json
