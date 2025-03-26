@@ -6,7 +6,7 @@ Configure a scenario in the `scenario.json` file.
 
 ## Sample Full Configuration
 
-```
+```json
 {
   "Config": {
     "Title": "Windows Powershell",
@@ -32,7 +32,7 @@ Configure a scenario in the `scenario.json` file.
 
 ## Configuration
 
-```
+```json
   "Config": {
     "Title": "Console Title",
     "Headers": [ "Header information"  ],
@@ -52,7 +52,7 @@ Whether the console would clear itself on start
 
 ## Scenario configuration
 
-```
+```json
 "Scenarios" : 
 [
   {
