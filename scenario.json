@@ -1,0 +1,36 @@
+[
+  {
+    "Input": "az login",
+    "OutputStream": {
+      "Outputs": [
+        {
+          "Output": "total 24",
+          "Delay": 200
+        },
+        {
+          "Output": "drwxr-xr-x 2 user group 4096 Mar 26 10:00 .",
+          "Delay": 300
+        },
+        {
+          "Output": "drwxr-xr-x 3 user group 4096 Mar 26 10:00 ..",
+          "Delay": 400
+        }
+      ]
+    }
+  },
+  {
+    "Input": "cat readme.txt",
+    "OutputStream": {
+      "Outputs": [
+        {
+          "Output": "Welcome to the Console Emulator!",
+          "Delay": 100
+        },
+        {
+          "Output": "This is a sample text file demonstrating the emulation.",
+          "Delay": 150
+        }
+      ]
+    }
+  }
+]
