@@ -1,36 +1,58 @@
-[
-  {
-    "Input": "az login",
-    "OutputStream": {
-      "Outputs": [
-        {
-          "Output": "total 24",
-          "Delay": 200
-        },
-        {
-          "Output": "drwxr-xr-x 2 user group 4096 Mar 26 10:00 .",
-          "Delay": 300
-        },
-        {
-          "Output": "drwxr-xr-x 3 user group 4096 Mar 26 10:00 ..",
-          "Delay": 400
-        }
-      ]
-    }
+{
+  "Config": {
+    "Headers": [ "Microsoft Windows [Version 10.0.19433.563]", "(c) Microsoft Corpration. All rights reserved."  ],
+    "Prompt": "PS C:\\Console>",
+    "ClearOnStart": true,
+    "Title" :  "Windows Powershell"
   },
-  {
-    "Input": "cat readme.txt",
-    "OutputStream": {
-      "Outputs": [
-        {
-          "Output": "Welcome to the Console Emulator!",
-          "Delay": 100
-        },
-        {
-          "Output": "This is a sample text file demonstrating the emulation.",
-          "Delay": 150
-        }
-      ]
+  "Scenarios": [
+    {
+      "Input": "az login",
+      "OutputStream": {
+        "Outputs": [
+          {
+            "Output": [ "Retrieving tenants and subscriptions for the selection..." ],
+            "Delay": 5000
+          },
+          {
+            "Output": [
+              "",
+              "Tenant: Azure Company"
+            ],
+            "Delay": 10
+          },
+          {
+            "Output": [ "Subscription: Azure Pay-As-You-Go (abcdefg1-1234-5678-90ab-cdefg1234567)" ],
+            "Delay": 400
+          },
+          {
+            "Output": [
+              "",
+              "[Announcements]",
+              "With the new Azure CLI login experience, you can select the subscription you want to use more easily. Learn more about it and its configuration at https://go.microsoft.com/fwlink/?linkid=2271236"
+            ],
+            "Delay": 5
+          },
+          {
+
+            "Output": [
+              "",
+              "If you encounter any problem, please open an issue at https://aka.ms/azclibug"
+
+            ],
+            "Delay": 5
+          },
+          {
+            "Output": [
+              "",
+              "[Warning] The login output has been updated. Please be aware that it no longer displays the full list of available subscriptions by default."
+            ],
+            "Delay": 5,
+            "Color": "Yellow"
+          }
+
+        ]
+      }
     }
-  }
-]
+  ]
+}
